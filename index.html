@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CipherTool Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>CipherTool – Security Algorithms</h1>
+</header>
+
+<div class="tabs">
+    <button class="tablinks" onclick="openTab(event, 'railFence')">Rail-Fence Cipher</button>
+    <button class="tablinks" onclick="openTab(event, 'polyalphabetic')">Polyalphabetic Ciphers</button>
+    <button class="tablinks" onclick="openTab(event, 'playfair')">Playfair Cipher</button>
+</div>
+
+<div id="railFence" class="tabcontent">
+    <h3>Rail-Fence Cipher</h3>
+    <label for="railText">Enter text:</label>
+    <input type="text" id="railText" placeholder="Enter text to encrypt/decrypt">
+    <label for="railDepth">Enter depth (rails):</label>
+    <input type="number" id="railDepth" value="3">
+    <button onclick="encryptRail()">Encrypt</button>
+    <button onclick="decryptRail()">Decrypt</button>
+    <p id="railResult"></p>
+</div>
+
+<div id="polyalphabetic" class="tabcontent">
+    <h3>Polyalphabetic Ciphers</h3>
+    <label for="polyInputText">Enter text:</label>
+    <input type="text" id="polyInputText" placeholder="Enter text to encrypt/decrypt" />
+    <label for="polyKey">Enter key:</label>
+    <input type="text" id="polyKey" placeholder="Enter encryption key" />
+    <button onclick="encryptPoly()">Encrypt</button>
+    <button onclick="decryptPoly()">Decrypt</button>
+    <p id="polyResult"></p>
+</div>
+
+<div id="playfair" class="tabcontent">
+    <h3>Playfair Cipher</h3>
+    <label for="playfairText">Enter text:</label>
+    <input type="text" id="playfairText" placeholder="Enter text to encrypt/decrypt">
+    <label for="playfairKey">Enter keyword:</label>
+    <input type="text" id="playfairKey" placeholder="Enter keyword">
+    <button onclick="encryptPlayfair()">Encrypt</button>
+    <button onclick="decryptPlayfair()">Decrypt</button>
+    <p id="playfairResult"></p>
+</div>
+
+<footer>
+    &copy; 2025 CipherTool. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: #4f46e5;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    background: #4338ca;
+}
+
+.tabs button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.tabs button:hover {
+    background-color: #3730a3;
+}
+
+.tabs button.active {
+    background-color: #312e81;
+}
+
+.tabcontent {
+    display: none;
+    padding: 2rem;
+    background: white;
+    max-width: 600px;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label, input, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+input {
+    padding: 0.5rem;
+}
+
+button {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #4338ca;
+}
+
+p {
+    background: #eef2f7;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    font-family: monospace;
+}
