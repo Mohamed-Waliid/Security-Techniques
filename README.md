@@ -15,14 +15,6 @@ CipherTool is a simple web-based encryption and decryption tool that allows user
 - Responsive and clean layout using HTML/CSS.
 - No frameworks or external libraries required.
 
-## 📁 Project Structure
-
-ciphertool-demo/
-├── index.html # Main HTML file
-├── style.css # Styling for the UI
-└── script.js # Cipher logic and interactivity
-
-
 ## 🚀 How to Use
 
 1. **Clone or download** this repository.
